@@ -1,4 +1,4 @@
-import { readlineSync } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
 const welcome = (gameDis) => {
   console.log("Welcom to the Brain Games!");
