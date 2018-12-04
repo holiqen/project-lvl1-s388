@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const countQuest = 3;
 
-const welcome = 'Welcom to the Brain Games!';
+const welcome = 'Welcome to the Brain Games!';
 
 const startGame = (games) => {
   console.log(welcome);
