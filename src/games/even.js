@@ -1,5 +1,5 @@
-import startGame from '../index'
-import { getRandomNumber } from '../help'
+import startGame from '../index';
+import getRandomNumber from '../help';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 const makeGame = () => {
@@ -8,4 +8,4 @@ const makeGame = () => {
   return { question, correctAnswer };
 };
 
-export default () => startGame({description, makeGame});
+export default () => startGame({ description, makeGame });

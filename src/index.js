@@ -11,7 +11,7 @@ const startGame = (games) => {
   console.log(`Hello, ${name}!`);
 
   for (let i = 1; i <= countQuest; i += 1) {
-    const { question, correctAnswer} = games.makeGame();
+    const { question, correctAnswer } = games.makeGame();
     console.log('Question: ', question);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
@@ -23,7 +23,6 @@ const startGame = (games) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
 
 
 export default startGame;
