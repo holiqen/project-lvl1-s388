@@ -5,3 +5,5 @@
 [![Build Status](https://travis-ci.org/holiqen/project-lvl1-s388.svg?branch=master)](https://travis-ci.org/holiqen/project-lvl1-s388)
 
 [![asciicast](https://asciinema.org/a/lDCTrqpR4ZjpUyLWtR8PrYhfd.svg)](https://asciinema.org/a/lDCTrqpR4ZjpUyLWtR8PrYhfd)
+
+[![asciicast](https://asciinema.org/a/cl5JwBmMn0TW2c8gPi7yEf4B9.svg)](https://asciinema.org/a/cl5JwBmMn0TW2c8gPi7yEf4B9)
