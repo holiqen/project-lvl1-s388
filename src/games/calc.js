@@ -1,5 +1,7 @@
+
+
 import startGame from '../index';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 const description = 'What is the result of the expression?';
 const calc = () => {
@@ -8,17 +10,17 @@ const calc = () => {
   const randomSigns = getRandomNumber(0, 2);
   const getSigns = {
     0: {
-      getString: (x, y) => `${x} + ${y}`,
-      getAnswer: (x, y) => x + y
+      getString: (a, b) => `${a} + ${b}`,
+      getAnswer: (a, b) => a + b,
     },
     1: {
-      getString: (x, y) => `${x} - ${y}`,
-      getAnswer: (x, y) => x - y
+      getString: (a, b) => `${a} - ${b}`,
+      getAnswer: (a, b) => a - b,
     },
     2: {
-      getString: (x, y) => `${x} * ${y}`,
-      getAnswer: (x, y) => x * y
-    }
+      getString: (a, b) => `${a} * ${b}`,
+      getAnswer: (a, b) => a * b,
+    },
   };
   const question = getSigns[randomSigns].getString(x, y);
   const correctAnswer = String(getSigns[randomSigns].getAnswer(x, y));
