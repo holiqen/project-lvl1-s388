@@ -4,13 +4,14 @@ import getRandomNumber from '../utils';
 const description = 'What number is missing in the progression?';
 const progression = () => {
   const a = getRandomNumber(0, 100);
-  let str = '';
   let startProg = a;
+  let str = '';
   let answer = 0;
-  const getPosition = getRandomNumber(1, 10);
+  const LENGTH_PROG = 10;
+  const position = getRandomNumber(1, LENGTH_PROG);
   const step = getRandomNumber(2, 5);
-  for (let i = 0; i < 10; i += 1) {
-    if (i === getPosition) {
+  for (let i = 0; i < LENGTH_PROG; i += 1) {
+    if (i === position) {
       str = `${str} ..`;
       answer = startProg;
     } else {
@@ -18,7 +19,7 @@ const progression = () => {
     }
     startProg += step;
   }
-  const question = str;
+  const question = str.trim();
   const correctAnswer = String(answer);
   return { question, correctAnswer };
 };

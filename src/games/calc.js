@@ -1,5 +1,3 @@
-
-
 import startGame from '../index';
 import getRandomNumber from '../utils';
 
