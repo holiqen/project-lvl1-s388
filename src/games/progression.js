@@ -1,25 +1,25 @@
-import startGame from '../index';
+import startGame from '..';
 import getRandomNumber from '../utils';
 
 const description = 'What number is missing in the progression?';
+const lengthProgression = 10;
 const progression = () => {
   const a = getRandomNumber(0, 100);
   let startProg = a;
-  let str = '';
+  let finishedProgression = '';
   let answer = 0;
-  const LENGTH_PROG = 10;
-  const position = getRandomNumber(1, LENGTH_PROG);
+  const position = getRandomNumber(0, lengthProgression);
   const step = getRandomNumber(2, 5);
-  for (let i = 0; i < LENGTH_PROG; i += 1) {
+  for (let i = 0; i < lengthProgression; i += 1) {
     if (i === position) {
-      str = `${str} ..`;
-      answer = startProg;
+      finishedProgression = `${finishedProgression} ..`;
+      answer = a + (step * i);
     } else {
-      str = `${str} ${startProg}`;
+      finishedProgression = `${finishedProgression} ${startProg}`;
     }
     startProg += step;
   }
-  const question = str.trim();
+  const question = finishedProgression.trim();
   const correctAnswer = String(answer);
   return { question, correctAnswer };
 };
