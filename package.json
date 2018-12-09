@@ -1,6 +1,6 @@
 {
   "name": "games_project1",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "First JS project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
