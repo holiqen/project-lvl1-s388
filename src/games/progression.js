@@ -9,9 +9,9 @@ const progression = () => {
   const hiddenElementPosition = getRandomNumber(0, lengthProgression);
   const step = getRandomNumber(2, 5);
   const answer = a + (step * hiddenElementPosition);
-  for ( let i = 0; i < lengthProgression; i += 1) {
+  for (let i = 0; i < lengthProgression; i += 1) {
     if (i === hiddenElementPosition) {
-      finishedProgression += ` ..`;
+      finishedProgression += ' ..';
     } else {
       const startProg = a + (step * i);
       finishedProgression += ` ${startProg}`;
